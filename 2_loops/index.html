@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TP Boucles</title>
+
+  <style>
+    #container {
+      margin: 40px;
+      border: 1px solid silver;
+      border-radius: 25px;
+      background-color: rgba(50, 50, 50, 0.7);
+      background-color: rgb(243, 229, 229);
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h2>Simples</h2>
+    <p>
+      A coder à la fois avec des boucles traditionnelles, et des modernes :
+      <ol>
+        <li>transforme les éléments d'un tableau en leur opposé (1 => -1; -6 => 6; 0 => 0)</li>
+        <li>
+          prends une liste de noms, et affiche ces noms en liste numéroté. Exemple : <br>
+          1) Xavier <br>
+          2) Pierre
+        </li>
+        <li>affiche le produit des nombres impaires passés en paramètre</li>
+        <li>affiche la somme des nombres pairs compris dans [100; 200] passés en paramètre</li>
+        <li>affiche la moyenne des nombres passées en paramètre</li>
+      </ol>
+    </p>
+
+
+    <h2>Factoriel</h2>
+
+    <p>
+      Ecrire une fonction factoriel avec le maximum d'algorithmes possible (réellement différents).
+    </p>
+
+
+    <h2>Pre-visualisation de commande</h2>
+
+    <p>
+        &Eacute;crire une fonction qui affiche le résumé d'une commande. Une ligne de commande est représenté par un objet donnant le nom (name), le prix (price), la quantité (quantity), la TVA (tva ; si 1 => 20%, si 2 => 8%).
+        <br>
+        <strong>Exemple :</strong><pre> resumeCommand([
+  {
+    name: 'Mug',
+    quantity: 5,
+    price: 12,
+    tva: 1
+  },
+  {
+    name: 'Stylo',
+    quantity: 24,
+    price: 1.2,
+    tva: 1
+  },
+  {
+    name: 'Gommme',
+    quantity: 2,
+    price: 1.5,
+    tva: 1
+  },
+  {
+    name: 'Pâte',
+    quantity: 3,
+    price: 2,
+    tva: 2
+  }
+]);
+
+Donne :
+1) Mug : a €
+2) Stylo : b €
+3) Gomme : c €
+4) Pâte : d €
+
+Prix Brut : e €
+TVA : f €
+Prix TTC : g €
+
+        </pre>
+    </p>
+    <p>
+      <strong>N.B.</strong>: la fonction Object.keys donne un tableau contenant les clefs d'un objet. Exemple :
+      Object.keys({a: 2, b: 3}) retourne ['a', 'b'].
+    </p>
+  </div>
+</body>
+
+</html>

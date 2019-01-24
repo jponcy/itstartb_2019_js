@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TP DOM</title>
+
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -21,6 +23,59 @@
       <li>sur les derniers éléments, le div sera mis en évidence quand on survol la balise input</li>
     </ul>
   </p>
+
+  <h1>Reprise du TP conditions</h1>
+
+  <p>
+    On pourra reprendre les corrections apportées pour les TP sur les conditions.
+  </p>
+
+
+  <p>
+    (Rappel TP 1) Le but de ce premier TP est d'écrire quelques fonctions de bases :
+    <ol>
+      <li>mult : retourne le produit des deux paramètres</li>
+      <li>max : retourne le plus grand nombre entre les deux paramètres fournis</li>
+      <li>abs : retourne la valeur absolue du paramètre</li>
+      <li>square : retourne la valeur au carré du paramètre</li>
+      <li>limit : affiche un message en fonction de la valeur du paramètre
+        <dl>
+          <dt>Moins de 18</dt>
+          <dd>Affiche "Interdit aux mineurs"</dd>
+
+          <dt>Moins de 0</dt>
+          <dd>Affiche "T'es vraiment un génie !"</dd>
+
+          <dt>Entre 18 et 110</dt>
+          <dd>Bienvenue</dd>
+
+          <dt>Plus de 110</dt>
+          <dd>Bravo</dd>
+        </dl>
+      </li>
+    </ol>
+  </p>
+
+  <p>
+    Changements : Chaque fonction sera automatiquement appelée sur modification de champs de formulaire et le résultat sera affiché dans une div. Tous ces calcul seront effectués à partir des deux input ci-dessous et les résultat seront tous affiché dans le div#result.
+    <br>
+    Pour les calculs ne prennant qu'une seule valeur, on fera le calcul (et le résumé) sur les deux chiffres.
+  </p>
+
+  <div id="result">En attente de saisie de chiffres.</div>
+
+  <form>
+    <div>
+      <label for="a">Première valeur :</label>
+      <input type="number" name="a" id="a">
+    </div>
+
+
+    <div>
+      <label for="b">Deuxième valeur :</label>
+      <input type="number" name="b" id="b">
+    </div>
+  </form>
 </body>
 
 </html>

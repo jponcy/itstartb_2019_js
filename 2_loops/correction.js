@@ -93,3 +93,68 @@ function impaire2(tab) {
     .filter(v => v % 2)
     .reduce((acc, e) => acc * e));
 }
+
+
+
+function pair(tab) {
+  var result = 0;
+
+  for (var value of tab) {
+    if (value % 2 === 0 && value >= 100 && value <= 200) {
+      result += value;
+    }
+  }
+
+  console.log(result);
+}
+
+function pair2(tab) {
+  console.log(tab
+    .filter(e => e % 2 === 0)
+    .filter(e => e >= 100)
+    .filter(e => e <= 200)
+    .reduce((acc, e) => acc + e)
+  );
+}
+
+
+
+function average(tab) {
+  var sum = 0;
+
+  for (var e of tab) {
+    sum += e;
+  }
+
+  console.log(sum / tab.length);
+}
+
+function average2(tab) {
+  console.log(tab.reduce((acc, e) => acc + e) / tab.length);
+}
+
+
+
+function prod(tab) {
+  var sum = 0;
+
+  for (var value of tab) {
+    // if (('' + value).match(/^\d+(?:\.\d+)?$/)) { // Vérifie si c'est un nombre (réel ou entier).
+    //   sum *= parseFloat(value);
+    // }
+    var v = parseFloat(value);
+
+    if (!isNaN(v)) {
+      sum *= v;
+    }
+  }
+
+  return sum;
+}
+
+function prod2(tab) {
+  return tab
+    .map(e => parseFloat(e))
+    .filter(e => !isNaN(e))
+    .reduce((acc, e) => acc * e);
+}

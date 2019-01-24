@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    .danger {
+      background-color: red;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <h1>Salut</h1>
+    <p id="toto"><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid natus alias qui eveniet fugit
+        minima voluptatum illo eos dignissimos, pariatur minus libero maiores vero ad voluptate molestiae suscipit
+        possimus id.</span><span>Omnis excepturi temporibus harum eligendi vero. Alias suscipit numquam, labore iusto
+        autem voluptas, perferendis reprehenderit ullam, reiciendis saepe maiores vero iste dolorem provident sint
+        magni! Id voluptatum reiciendis blanditiis assumenda.</span></p>
+    <p><span>Nobis, ullam maiores facilis quis architecto eligendi quia! Qui, explicabo, eos quod blanditiis at laborum
+        suscipit quibusdam temporibus modi dolore in beatae a libero recusandae, dolor vitae velit perspiciatis
+        perferendis.</span><span>Sint modi veritatis natus. Exercitationem ipsum possimus, nostrum, perferendis quo,
+        eaque fugit esse praesentium obcaecati quam consectetur quidem alias a facilis enim! Neque sit dignissimos quis
+        dolorum excepturi numquam! Dolores!</span></p>
+    <p><span>Perspiciatis placeat similique quidem vel nemo ad velit earum illum doloribus. Numquam vero quasi quo vel
+        eligendi illo perferendis laboriosam non voluptatibus. Nulla eos id aliquam? At odit quasi quam.</span><span>Nobis
+        harum quibusdam qui ullam hic quia! Facere doloremque nisi unde accusantium. Itaque aperiam ipsa cumque illo
+        deserunt cum, harum consequuntur eaque beatae natus atque aspernatur eligendi! Quia, quasi fuga.</span></p>
+
+    <section>
+      <article>
+        <h1>Titre n°01</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quasi expedita blanditiis. Corporis odit
+          at porro autem totam provident, voluptate consectetur dolores modi, quo necessitatibus molestiae temporibus
+          in nam dolorum.</p>
+      </article>
+      <article>
+        <h1>Titre n°02</h1>
+        <p>Hic illo labore ut minima fugiat veritatis totam nesciunt voluptatem ratione ducimus pariatur ipsa sed saepe
+          esse impedit provident perferendis tempora beatae, ipsum quibusdam officiis excepturi eos. Voluptatum, velit
+          cum?</p>
+      </article>
+      <article>
+        <h1>Titre n°03</h1>
+        <p>Quos delectus quasi voluptas, consequuntur modi optio dolor saepe ut quo perspiciatis eius vero pariatur
+          quibusdam eum temporibus soluta at ipsum. Nesciunt voluptatibus officiis qui aperiam dolore quos odio
+          quaerat!</p>
+      </article>
+    </section>
+  </div>
+
+
+  <script>
+    function boom() {
+      alert('Toutes vos données ont étées supprimés.');
+    }
+
+    // document.body.remove();
+    // document.body.innerHTML
+
+    document.body.innerHTML  = '<button>Viens !</button>';
+    document.body.innerHTML += '<button class="danger">Appuis dessus !</button>';
+
+    var cmdDanger = document.getElementsByClassName('danger')[0];
+    var cmd       = document.querySelector('button:not([class])');
+
+    cmd.addEventListener('mouseenter',  () => document.body.className = 'danger');
+    cmd.addEventListener('mouseout',    () => document.body.className = '');
+
+    cmd.addEventListener('mouseover',   (event) => console.log(event));
+
+    cmdDanger.onclick = boom;
+  </script>
+</body>
+
+</html>

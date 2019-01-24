@@ -12,3 +12,16 @@ form > * {
 form label {
     font-weight: bold;
 }
+
+body {
+    border: 1px solid silver;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+body.dark {
+    color: white;
+    background-color: black;
+    border: 2px dashed white;
+}

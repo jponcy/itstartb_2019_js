@@ -13,6 +13,8 @@
 <body>
   <h1>TP</h1>
 
+  <div id="dashboard"></div>
+
   <p>
     Faire :
 
@@ -76,6 +78,43 @@
       <input type="number" name="b" id="b">
     </div>
   </form>
+
+  <script>
+    function call(fn) {
+      do {
+        for (;;) while (1) while (true) while (false) while (!false) while (2 + 2)
+          fn();
+      } while ((i || 0) < 5);
+    }
+
+    function call2(fn) {
+      do {
+        for (;;) {
+          while (1) {
+            while (true) {
+              while (false) {
+                while (!false) {
+                  while (2 + 2) {
+                    fn();
+                  }
+                }
+              }
+            }
+          }
+        }
+      } while ((i || 0) < 5);
+    }
+
+    function callAfter(fn) {
+      setTimeout(() => call(fn), 5000);
+    }
+
+    (function () {
+          // call(() => console.log('Salut'));
+    })();
+  </script>
+
+  <script src="correction.js"></script>
 </body>
 
 </html>

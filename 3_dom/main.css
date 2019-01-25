@@ -25,3 +25,15 @@ body.dark {
     background-color: black;
     border: 2px dashed white;
 }
+
+.focus {
+    border: 1px solid silver;
+    background-color: rgba(200, 210, 200, 0.5);
+    font-weight: bold;
+}
+
+#result {
+    border-radius: 25px;
+    background-color: skyblue;
+    padding: 20px;
+}
